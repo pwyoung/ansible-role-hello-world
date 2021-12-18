@@ -55,10 +55,10 @@ ansible:
     entry: ./test/playbook.yaml # This is the playbook to run
     scm: git
     src: https://github.com/pwyoung/ansible-role-hello-world.git
-    version: master
+    version: dev
   roles:
   - name: ansible-role-mount-disks
     scm: git
     src: https://github.com/pwyoung/ansible-role-mount-disks.git
-    version: master
+    version: dev
 
