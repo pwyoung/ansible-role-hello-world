@@ -10,7 +10,7 @@ vagrant:
     libvirt_cfg:
       append_project_name_to_nvme_disk_path: 'true'
       #box: generic/ubuntu1804
-      box: "fedora/31-cloud-base"
+      box: "fedora/35-cloud-base"
       emulator_path: /usr/bin/qemu-system-x86_64
       enabled: true
       machine_type: q35
@@ -24,7 +24,7 @@ vagrant:
         size: 20480
     virtualbox_cfg:
       append_project_name_to_nvme_disk_path: 'true'
-      box: "fedora/31-cloud-base"
+      box: "fedora/35-cloud-base"
       enable_sse4: true
       enabled: true
       nvme_disk_path: .vagrant/nvme_disks/
@@ -57,8 +57,8 @@ ansible:
     src: https://github.com/pwyoung/ansible-role-hello-world.git
     version: master
   roles:
-  - name: ansible-role-freeipa
+  - name: ansible-role-mount-disks
     scm: git
-    src: https://github.com/pwyoung/ansible-role-hello-world.git
+    src: https://github.com/pwyoung/ansible-role-mount-disks.git
     version: master
 
